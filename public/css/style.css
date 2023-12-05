@@ -751,6 +751,7 @@ body {
   .who{
       display:flex;
       flex-wrap: wrap-reverse;
+      width: 100%;
   }
 
   .imgWho{
@@ -806,6 +807,7 @@ body {
 @media (min-width:376px) and (max-width:425px){
   .who{
       display:flex;
+      width: 100%;
       flex-wrap: wrap-reverse;
   }
 
@@ -868,7 +870,7 @@ body {
 /* Mobile M */
 @media (max-width:375px){
   .who{
-      width: 97%;
+      width: 100%;
       display:flex;
       flex-wrap: wrap-reverse;
   }
@@ -4100,7 +4102,7 @@ body {
   top: 35.5%;
   width: 53%;
   z-index: 4;
-  padding-left: 0.5%;
+  padding-left: 6%;
   /* flex-grow: 1; */
 }
 
@@ -4218,6 +4220,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 
@@ -4255,17 +4258,19 @@ body {
 .User_Input {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
   flex-wrap: wrap;
   height: auto;
   font-size: 20px;
   color: #455ba4;
+  margin-right: 20%;
 
 
 }
 
 .User_Input div {
   color: #455ba4;
+  width: 140%;
 }
 
 .User_Input input {
@@ -4274,7 +4279,7 @@ body {
   border: 2px solid #455ba49b;
   font-size: 16px;
   color: #455ba4;
-  margin-right: 5%;
+ 
   margin-bottom: 3%;
   width: 100%;
   display: flex;
