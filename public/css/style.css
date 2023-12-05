@@ -2689,6 +2689,316 @@ body {
 
 
 
+    @media screen and (max-width: 375px) {
+ 
+      body {
+        width: 100%;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+      }
+      
+      
+      
+      .Section4 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #0a1650;
+
+      }
+      
+
+      .Global_Projects div {
+        margin-top: 30%;
+      }
+      
+      .S4_OG {
+        width: 0%;
+      }
+      
+      .Image_Dots {
+        display: flex;
+        margin-top: 95%;
+        width: 50%;
+      }
+      
+      .Image_Dots img {
+        width: 160%;
+      }
+      
+      
+      
+      .S4_ONE {
+        margin-top: 12%;
+        width: 120%;
+        margin-bottom: 6%;
+        
+       
+      }
+      
+      .RELIABLE {
+        margin-top: -1%;
+        padding-right: 70%;
+      }
+      
+      #Paragraph {
+        margin-top: 2%;
+      }
+      
+      .S4_ONE h4 {
+        color: #46a3cf;
+        width: 230%;
+        letter-spacing: 4px;
+        font-size: 16px;
+        margin-top: 9%;
+        margin-bottom: 20%;
+        line-height: 160%;
+        padding-left: 13%;
+      }
+      
+      
+      .RELIABLE h1 {
+        font-size: 43px;
+        line-height: 130%;
+        margin-top: -0.5%;
+        width: 230%;
+        padding-left: 13%;
+        text-align: center;
+        
+        
+      }
+      
+      
+      .RELIABLE p {
+        color: #5b6fb2;
+        line-height: 160%;
+        font-size: 19px;
+        width: 210%;
+        margin-top: -9%;
+        font-weight: 500;
+        padding-left: 20%;
+        text-align: justify;
+      
+      }
+      
+      
+      
+      .S4_TWO {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+      
+      }
+      
+      .Working_Girl {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-bottom: 22%;
+        
+      }
+      
+      
+      .Working_B {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 8%;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .Working_B img {
+        width: 100%;
+        
+      }
+      
+      
+      
+      
+      .Creative_Bouton {
+        display: flex;
+        text-align: left;
+        width: 0%;
+        height: 97%;
+        margin-top: -1.5%;
+        
+      }
+      
+      .Creative_Bouton button {
+        padding: 3% 4% 1% 4%;
+      }
+      
+      .READ_MORE {
+        width: 0%;
+        height: 270px;
+        color: white;
+        background-color: #0ad3ef;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        margin-top: 20%;
+        margin-left: 52%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 12px;
+        position: relative;
+      }
+      
+      
+      
+      
+      .READ_MORE img {
+          width: 0px;
+          margin-bottom: -1%;
+          display: flex;
+          
+      }
+      
+      .READ_MORE h4 {
+          font-size: 0px;
+          margin-bottom: -1.5%;
+          font-weight: 600;
+          letter-spacing: 0.4px;
+          text-align: left;
+      }
+      
+      
+      .READ_MORE p {
+        font-size: 0px;
+        line-height: 135%;
+        width: 110%;
+        margin-bottom: 1%;
+        letter-spacing: 0.4px;
+        font-weight: 500;
+        text-align: left;
+      }
+      
+      
+      .READ_MORE h3 {
+        font-weight: 500;
+        font-size: 0px;
+      }
+      
+      
+      
+      
+      
+      
+      .ProgressBar {
+        display: flex;
+        flex-wrap: wrap;
+        width: 200%;
+        height: fit-content;
+        font-family: 'Oswald', sans-serif;
+        font-size: 33px;
+        align-items: center;
+        gap: 0.2%;
+        margin-top: 10%;
+        justify-content: center;
+        margin-left: -60%;
+        z-index: 4;
+        
+      }
+      
+      
+      .ProgressBar p {
+        font-family: 'Roberto', sans-serif;
+        font-size: 17px;
+        margin-top: 20%;
+        font-weight: 700;
+        z-index: 6;
+      }
+      
+      
+      
+      
+      @property --progress-value {
+          syntax: '<integer>';
+          inherits: false;
+          initial-value: 0;
+        }
+        
+        @keyframes html-progress {
+          to { --progress-value: 85; }
+        }
+        
+        @keyframes css-progress {
+          to { --progress-value: 78; }
+        }
+        
+        @keyframes js-progress {
+          to { --progress-value: 64; }
+        }
+        
+        .progress-bar {
+          width: 105px;
+          height: 105px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .progress-bar::before {
+          counter-reset: percentage var(--progress-value);
+          content: counter(percentage) '%';
+        }
+        
+        .html {
+          background: 
+            radial-gradient(closest-side, #0a1650 95%, transparent 80% 100%),
+            conic-gradient(#329bca calc(var(--progress-value) * 1%), #233275 0);
+          animation: html-progress 4s 1 forwards;
+        }
+        
+        .html::before {
+          animation: html-progress 4s 1 forwards;
+        }
+        
+        .css {
+          background: 
+            radial-gradient(closest-side, #0a1650 95%, transparent 80% 100%, white 0),
+            conic-gradient(#329bca calc(var(--progress-value) * 1%), #233275 0);
+          animation: css-progress 4s 1 forwards;
+        }
+        
+        .css::before {
+          animation: css-progress 4s 1 forwards;
+        }
+        
+        .js {
+          background: 
+            radial-gradient(closest-side, #0a1650 95%, transparent 80% 100%, white 0),
+            conic-gradient(#329bca calc(var(--progress-value) * 1%), #233275 0);
+          animation: js-progress 4s 1 forwards;
+          margin-left: 12%;
+        }
+        
+        .js::before {
+          animation: js-progress 4s 1 forwards;
+        }
+        
+        
+        progress {
+          visibility: hidden;
+          width: 0;
+          height: 0;
+        }
+      }
+  
+
 
 
 
@@ -3557,6 +3867,7 @@ body {
   background-size: cover;
   padding-bottom: 11.5%;  
   padding-top: 7%;   
+  margin: 0;
 }
 
 
